@@ -1,4 +1,4 @@
-package qr.src.main.java.fr.questions_reponses;
+package fr.questions_reponses;
 
 public class Joueur {
     
@@ -20,16 +20,8 @@ public class Joueur {
         return numero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
     public String getNom() {
         return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     public int getScore() {

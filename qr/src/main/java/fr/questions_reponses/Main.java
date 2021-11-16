@@ -1,9 +1,14 @@
-package qr.src.main.java.fr.questions_reponses;
+package fr.questions_reponses;
 
 public class Main {
     public static void main(String[] args) {
         
-        public Joueurs;
+        Joueurs J = new Joueurs();
 
+        // J.afficherJoueurs();
+        // J.afficherRandom();
+
+        J.genererParticipants();
+        J.afficherParticipants();
     }
 }
