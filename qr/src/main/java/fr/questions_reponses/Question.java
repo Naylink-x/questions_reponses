@@ -1,50 +1,64 @@
 package fr.questions_reponses;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Question {
-    private static int numero_init = 1;
+    Scanner in = new Scanner(System.in);
+
+    protected static int numero_init = 1;
     protected int numero;
     protected String theme;
     protected int niveau;
     protected String type;
     protected String question;
     protected String reponse;
-    protected String[] options;
+    protected ArrayList<String> options = new ArrayList<String>();
 
-    public Question(String theme, int niveau, String question, String reponse) {
+    public Question(int numero, String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
         this.numero = Question.numero_init;
         this.theme = theme;
         this.niveau = niveau;
         this.question = question;
         this.reponse = reponse;
+        this.type = type;
+        this.options = options;
         Question.numero_init++;
     }
 
     public Question() {
-
+    
     }
 
     public void afficherQuestion() {
         System.out.print("Thème : " + theme + " , ");
-        System.out.println("Difficulté : " + niveau);
-        System.out.print(numero + ", ");
+        System.out.print("Difficulté : " + niveau + " , ");
+        System.out.println("Type : " + type);
+        System.out.print(numero + ". ");
         System.out.println(question);
-        for (int i=0; i<options.length; i++) {
-            System.out.println(options[i]);
+        for (String option : options) {
+            System.out.println(option);
         }
     }
 
-    public void saisieQuestion(String type, String theme, int niveau, String question, String reponse, String options[]) {
+    public Question saisieQuestion() {
+        Question Q = new Question();
+
+        System.out.println("Quel type de question souhaitez vous créer ? (QCM, VF, RC)");
+        type = (in.nextLine());
         switch(type) {
             case "QCM" :
-                new QCM(theme, niveau, question, reponse, options);
+                Q = new QCM();
                 break;
             case "VF" :
-                new VF(theme, niveau, question, reponse, options);
+                Q = new VF();
                 break;
             case "RC" :
-                new RC(theme, niveau, question, reponse, options);
+                Q = new RC();
                 break;
         }
+        Q.type = type;
+        return Q;
     }
     
     public String getTheme() {
