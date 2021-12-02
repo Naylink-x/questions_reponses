@@ -4,16 +4,22 @@ import java.util.ArrayList;
 
 public class VF extends Question {
 
-    public VF(int numero, String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
-        super(numero, theme, niveau, question, reponse, type, options);
+    public VF(String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
+        super(theme, niveau, question, reponse, type, options);
     }
 
     public VF() {
         super.numero = Question.numero_init;
         Question.numero_init++;
+        int count = 0;
         
-        System.out.println("Attribuez un thème à la question : ");
-        super.theme = in.nextLine();
+        do {
+            if (count > 0) System.out.println("Ce thème n'existe pas, renseignez un thème qui existe !");
+            System.out.println("Attribuez un thème à la question : ");
+            super.theme = in.nextLine();
+            count++;
+        } while (!initTheme.controlTheme(super.theme));
+        
         System.out.println("Attribuez un niveau à la question : ");
         super.niveau = in.nextInt();
         in.nextLine();

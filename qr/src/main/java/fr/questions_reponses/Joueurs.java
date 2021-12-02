@@ -16,7 +16,7 @@ public class Joueurs {
     public Joueurs(int nbJoueurs) {
         this.nbJoueurs = nbJoueurs;
         listeJoueurs = new ArrayList<Joueur>(this.nbJoueurs);
-        for(int i=0; i<nbJoueurs; i++) {
+        for (int i=0; i<nbJoueurs; i++) {
             System.out.println("Saisissez un nom de joueur : ");
             nomJoueur = in.nextLine();
             listeJoueurs.add(Joueur.saisieJoueur(nomJoueur));
@@ -27,13 +27,13 @@ public class Joueurs {
         String[] listeNoms = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"};
 
         listeJoueurs = new ArrayList<Joueur>(20);
-        for(int i=0; i<20; i++) {
+        for (int i=0; i<20; i++) {
             listeJoueurs.add(Joueur.saisieJoueur(listeNoms[i]));
         }        
     }
 
     public void afficherJoueurs() {
-        for(int i=0; i<listeJoueurs.size(); i++) {
+        for (int i=0; i<listeJoueurs.size(); i++) {
             listeJoueurs.get(i).afficherJoueur();
         }
     } 
@@ -50,11 +50,11 @@ public class Joueurs {
         ArrayList<Integer> listeNb = new ArrayList<Integer>();
         listeParticipants = new ArrayList<Joueur>();
 
-        while(listeNb.size() < 4) {
+        while (listeNb.size() < 4) {
             boolean estPresent = false;
             int nb = random.nextInt(listeJoueurs.size());
-            for(int i=0; i<listeNb.size(); i++) {
-                if(listeNb.get(i) == nb) {
+            for (int i=0; i<listeNb.size(); i++) {
+                if (listeNb.get(i) == nb) {
                     estPresent = true;
                 }
             }
@@ -63,7 +63,7 @@ public class Joueurs {
             }
         }
 
-        for(int i=0; i<listeNb.size(); i++) {
+        for (int i=0; i<listeNb.size(); i++) {
             listeParticipants.add(listeJoueurs.get(listeNb.get(i)));
             listeParticipants.get(i).setEtat("sélectionné");
         }
@@ -71,7 +71,7 @@ public class Joueurs {
     }
 
     public void afficherParticipants() {
-        for(int i=0; i<listeParticipants.size(); i++) {
+        for (int i=0; i<listeParticipants.size(); i++) {
             listeParticipants.get(i).afficherJoueur();
         }
     }

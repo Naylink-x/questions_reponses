@@ -5,22 +5,32 @@ import java.util.Random;
 
 public class Themes {
 
-    public ArrayList<String> themes = new ArrayList<>();
+    private ArrayList<String> themes = new ArrayList<>();
 
     public Themes(){
 
-        // TODO : Remplacer ArrayList par HashMap afin d'avoir un indicateur du thème sélectionné ?
-
         themes.add("Histoire");
-        themes.add("Géographie");
+        themes.add("Geographie");
         themes.add("Sport");
         themes.add("Science");
-        themes.add("Culture générale");
+        themes.add("Culture generale");
         themes.add("Musique");
         themes.add("Litterature");
         themes.add("Divertissement");
-        themes.add("Math");
+        themes.add("Mathematiques");
         themes.add("Logique");
+    }
+
+    public int getThemeIndex(String theme) {
+        return themes.indexOf(theme);
+    }
+
+    public String getTheme(int index) {
+        return themes.get(index);
+    }
+
+    public boolean controlTheme(String theme) {
+        return themes.contains(theme);
     }
 
     public void showAllTheme() {
@@ -40,7 +50,7 @@ public class Themes {
         Random random = new Random();
         ArrayList<Integer> listNb = new ArrayList<>();
 
-        while(listNb.size() <= nbTheme) {
+        while (listNb.size() <= nbTheme) {
             boolean isSelected = false;
             int nb = random.nextInt(themes.size());
 
@@ -51,11 +61,11 @@ public class Themes {
                     break;
                 }
             }
-            if(!isSelected) {
+            if (!isSelected) {
                 listNb.add(nb);
             }
         }
-        for(int i = 0; i <= nbTheme; i++){
+        for (int i = 0; i <= nbTheme; i++){
 
             int newList = listNb.get(i);
             String SelectedTheme = themes.get(newList);

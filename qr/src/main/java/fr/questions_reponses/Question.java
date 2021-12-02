@@ -1,23 +1,35 @@
 package fr.questions_reponses;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
 
 public class Question {
     Scanner in = new Scanner(System.in);
 
     protected static int numero_init = 1;
     protected int numero;
+    protected Themes initTheme = new Themes();
     protected String theme;
     protected int niveau;
     protected String type;
     protected String question;
     protected String reponse;
     protected ArrayList<String> options = new ArrayList<String>();
+    
 
-    public Question(int numero, String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
+    public Question(String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
         this.numero = Question.numero_init;
-        this.theme = theme;
+        if (initTheme.controlTheme(theme)) this.theme = theme; // gérer le cas ou controlTheme renvoi false
         this.niveau = niveau;
         this.question = question;
         this.reponse = reponse;
@@ -27,7 +39,20 @@ public class Question {
     }
 
     public Question() {
-    
+
+    }
+
+    // TODO : Serialize method to export questions
+
+    public void exportQuestion(Question Q, Path dest) throws IOException {
+        // NOT WORKING
+        Gson gson = new GsonBuilder().serializeNulls().setPrettyPrinting().create();
+        try (PrintWriter wr = new PrintWriter(Files.newBufferedWriter(dest))) {
+            JsonElement jsonElement = gson.toJsonTree(Q);
+            JsonObject questionObject = new JsonObject();
+            questionObject.add("questions", jsonElement);
+            gson.toJson(questionObject, wr);
+        }
     }
 
     public void afficherQuestion() {
@@ -41,12 +66,16 @@ public class Question {
         }
     }
 
+    /* public Question saisieQuestion(String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
+        return new Question(theme, niveau, question, reponse, type, options);
+    } */
+
     public Question saisieQuestion() {
         Question Q = new Question();
 
         System.out.println("Quel type de question souhaitez vous créer ? (QCM, VF, RC)");
         type = (in.nextLine());
-        switch(type) {
+        switch (type) {
             case "QCM" :
                 Q = new QCM();
                 break;
@@ -59,14 +88,6 @@ public class Question {
         }
         Q.type = type;
         return Q;
-    }
-    
-    public String getTheme() {
-        return theme;
-    }
-
-    public void setTheme(String theme) {
-        this.theme = theme;
     }
 
     public int getNiveau() {
