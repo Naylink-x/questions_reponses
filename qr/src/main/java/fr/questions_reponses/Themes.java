@@ -1,24 +1,27 @@
 package fr.questions_reponses;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.Random;
 
 public class Themes {
 
-    private ArrayList<String> themes = new ArrayList<>();
+    private LinkedList<String> themes = new LinkedList<String>();
 
     public Themes(){
 
         themes.add("Histoire");
         themes.add("Geographie");
         themes.add("Sport");
-        themes.add("Science");
+        themes.add("Sciences");
         themes.add("Culture generale");
-        themes.add("Musique");
+        themes.add("Arts");
         themes.add("Litterature");
         themes.add("Divertissement");
-        themes.add("Mathematiques");
-        themes.add("Logique");
+        themes.add("Nature");
+        themes.add("Loisirs");
+        Collections.shuffle(themes);
     }
 
     public int getThemeIndex(String theme) {
@@ -71,6 +74,14 @@ public class Themes {
             String SelectedTheme = themes.get(newList);
             System.out.println(newList + ". " +SelectedTheme);
         }
+    }
+
+    public LinkedList<String> getThemes() {
+        return themes;
+    }
+
+    public void setThemes(LinkedList<String> themes) {
+        this.themes = themes;
     }
 }
 

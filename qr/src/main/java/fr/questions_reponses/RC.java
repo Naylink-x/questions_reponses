@@ -28,8 +28,4 @@ public class RC extends Question {
         System.out.println("Quelle est la bonne réponse à la question ? ");
         super.reponse = in.nextLine();
     }
-
-    public void addOptions(String x) {
-        
-    }
 }

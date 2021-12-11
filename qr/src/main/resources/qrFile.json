@@ -1,21 +1,572 @@
 {
   "questions" : [
     {
+    "theme" : "Loisirs",
+    "niveau" : 1,
+    "question" : "Quel écrivain américain a participé à la création de la licence de jeux vidéo comme Splinter Cell ou Rainbow Six ?",
+    "reponse" : "Tom Clancy",
+    "type" : "RC",
+    "options" : [
+
+    ]
+  },
+  {
     "theme" : "Histoire",
-    "niveau" : 3,
-    "question" : "Quelle est la bonne reponse ?",
-    "reponse" : "A",
+    "niveau" : 1,
+    "question" : "Quel roi de France a eu le règne le plus court ?",
+    "reponse" : "Louis XIX",
     "type" : "QCM",
     "options" : [
-      "A",
-      "B",
-      "C"
+      "Henri V",
+      "Louis XIX",
+      "Louis XVI"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 1,
+    "question" : "Lequel de ces arbres n'est PAS à feuillage persistant ?",
+    "reponse" : "Le saule",
+    "type" : "QCM",
+    "options" : [
+      "Le houx",
+      "Le genévrier",
+      "Le saule"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 1,
+    "question" : "Quel joueur de football est surnommé 'la Pioche' ?",
+    "reponse" : "Paul Pogba",
+    "type" : "RC",
+    "options" : [
+
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 2,
+    "question" : "L'os hyoïde permet aux félins de ronronner ou de rugir.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 2,
+    "question" : "Le 'brown out' est une pathologie qui touche les salariés laminés par la pression quotidienne.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 1,
+    "question" : "Dans quelle saga cinématographique signée Quentin Tarantino Uma Thurman campe-t-elle le rôle d'une mariée ?",
+    "reponse" : "Kill Bill",
+    "type" : "RC",
+    "options" : [
+      
     ]
   },
   {
     "theme" : "Geographie",
     "niveau" : 1,
-    "question" : "Paris est la capitale de la France ?",
+    "question" : "Quel est le plat national écossais ?",
+    "reponse" : "Le haggis",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 1,
+    "question" : "Quel guitariste américain, gaucher mais jouant avec une guitare de droitier, est connu pour son travail sur l'effet Larsen et la pédale wah-wah ?",
+    "reponse" : "Jimi Hendrix",
+    "type" : "QCM",
+    "options" : [
+      "Jimi Hendrix",
+      "Frank Zappa",
+      "Chuck Berry"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 1,
+    "question" : "Dans la mythologie, qui est le père de Télémaque ?",
+    "reponse" : "Ulysse",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 3,
+    "question" : "Quel auteur fait le récit de la rencontre entre un enfant et un vieux loup borgne, dans un zoo ?",
+    "reponse" : "Daniel Pennac",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 1,
+    "question" : "Quelle planète porte le nom du dieu romain de la guerre ?",
+    "reponse" : "Mars",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 1,
+    "question" : "Dans quelle ville la Déclaration d'Indépendance des Etats-Unis a-t-elle été signée ?",
+    "reponse" : "Philadelphie",
+    "type" : "QCM",
+    "options" : [
+      "New-York",
+      "Washington",
+      "Philadelphie"
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 1,
+    "question" : "Quel est le plus grand des deux os qui se trouvent entre le genou et le cou-de-pied ?",
+    "reponse" : "Le tibia",
+    "type" : "QCM",
+    "options" : [
+      "Le fémur",
+      "Le tibia",
+      "Le péroné"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 2,
+    "question" : "Quel parc national situé dans les montagnes Rocheuses est le plus ancien du Canada ?",
+    "reponse" : "Le parc national de Banff",
+    "type" : "QCM",
+    "options" : [
+      "Le parc national de Banff",
+      "Le parc national de Kootenay",
+      "Le parc national d'Auyuittuq"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 1,
+    "question" : "A l'escrime, quelle arme est la plus lourde ?",
+    "reponse" : "L'épée",
+    "type" : "QCM",
+    "options" : [
+      "Le fleuret",
+      "L'épée",
+      "Le sabre"
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 1,
+    "question" : "Comment s'écrit 5 en binaire ?",
+    "reponse" : "101",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 3,
+    "question" : "Quelle femme a été la première à être élue à l'Académie française ?",
+    "reponse" : "Marguerite Yourcenar",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 1,
+    "question" : "Laquelle de ces villes est la plus au sud ?",
+    "reponse" : "Toulouse",
+    "type" : "QCM",
+    "options" : [
+      "Montpellier",
+      "Nice",
+      "Toulouse"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 1,
+    "question" : "Le water-polo s'est tout d'abord pratiqué à cheval sur des tonneaux flottants.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 2,
+    "question" : "En cuisine, qu'utilise-t-on pour stabiliser une émulsion ?",
+    "reponse" : "De la lécithine",
+    "type" : "QCM",
+    "options" : [
+      "De la lécithine",
+      "Du sucre",
+      "De la vitamine H"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 3,
+    "question" : "Parmi ces pays, lequel n'est pas bordé par la mer des Caraïbes ?",
+    "reponse" : "Le Salvador",
+    "type" : "QCM",
+    "options" : [
+      "Le Salvador",
+      "Bélize",
+      "Panama"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 2,
+    "question" : "Lequel de ces appareils ménagers a été inventé en premier ?",
+    "reponse" : "Le lave-vaisselle",
+    "type" : "QCM",
+    "options" : [
+      "L'aspirateur électrique",
+      "Le four à micro-ondes",
+      "Le lave-vaisselle"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 3,
+    "question" : "Quel était le métier de William Morrison, co-inventeur, avec le confiseur John C. Wharton, de la barbe à papa ?",
+    "reponse" : "Dentiste",
+    "type" : "QCM",
+    "options" : [
+      "Barbier",
+      "Chirurgien",
+      "Dentiste"
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 3,
+    "question" : "'L'Envers du paradis' signe le début de la 'période jazz' de quel auteur ?",
+    "reponse" : "F. Scott Fitzgerald",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 3,
+    "question" : "Comment appelle-t-on communément le flux de plasma constitué d'ions et d'électrons éjectés par le Soleil ?",
+    "reponse" : "Le vent solaire",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 2,
+    "question" : "A quel animal les races Bresse-Gauloise, Cotentine et Cou nu du Forez appartiennent-elles ?",
+    "reponse" : "La poule",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 1,
+    "question" : "Quel peintre est notamment connu pour sa 'période bleue' (1901-1904) et se 'période rose' (1904-1906) ?",
+    "reponse" : "Pablo Picasso",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 1,
+    "question" : "Quelle lettre vaut deux points au Scrabble ?",
+    "reponse" : "G",
+    "type" : "QCM",
+    "options" : [
+      "A",
+      "X",
+      "G"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 2,
+    "question" : "Elvis Presley était ceinture noire de judo.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 3,
+    "question" : "Dans la mythologie grecque, Hercule tua le lion de Némée en l'étouffant.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 1,
+    "question" : "Quel auteur de polar est l'écrivain le plus lu au monde en 2016 ?",
+    "reponse" : "Agatha Christie",
+    "type" : "QCM",
+    "options" : [
+      "Guillaume Musso",
+      "Agatha Christie",
+      "Harlan Coben"
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 2,
+    "question" : "Au XVIIIème siècle, certains peintres autrichiens se servaient de toiles d'araignées comme toiles à peindre.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 3,
+    "question" : "En quelle année la première transplantation cardiaque a-t-elle été réussie ?",
+    "reponse" : "1967",
+    "type" : "QCM",
+    "options" : [
+      "1967",
+      "1970",
+      "1977"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 2,
+    "question" : "Dans quel pays le jeu vidéo World of Tanks a-t-il été développé ?",
+    "reponse" : "Biélorussie",
+    "type" : "QCM",
+    "options" : [
+      "Biélorussie",
+      "Chypre",
+      "Russie"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 1,
+    "question" : "La première URL d'Amazon était 'relentless.com' ?",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 2,
+    "question" : "Quel album de U2 a été offert aux utilisateurs d'iTunes en 2014 ?",
+    "reponse" : "Songs of Innocence",
+    "type" : "QCM",
+    "options" : [
+      "Atchung Baby",
+      "The Joshua Tree",
+      "Songs of Innocence"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 1,
+    "question" : "Les femmes qui apparaissent au générique d'Orange is the New Black sont de véritables ex-détenues.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 2,
+    "question" : "Dans The Big Bang Theory, quel personnage n'a qu'un prénom, et pas de nom de famille ?",
+    "reponse" : "Penny",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 1,
+    "question" : "La véritable couleur du Soleil est orange.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 1,
+    "question" : "1000 terabytes de données sont égales à 1 exabyte.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 1,
+    "question" : "En moyenne, en octobre, il pleut davantage à Nice qu'à Nancy.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 2,
+    "question" : "Aux Jeux Olympiques, dans quel ordre les épreuves du triathlon se succèdent-elles ?",
+    "reponse" : "Natation, cyclisme, course à pied",
+    "type" : "QCM",
+    "options" : [
+      "Cyclisme, course à pied, natation",
+      "Natation, cyclisme, course à pied",
+      "Course à pied, natation, cyclisme"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 2,
+    "question" : "Quelle ville de la Marne est surnommée 'la cité des sacres' ?",
+    "reponse" : "Reims",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 1,
+    "question" : "La figure centrale du Guernica de Picasso est un cheval blessé et hennissant.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 2,
+    "question" : "De quel dieu Lara Croft recherche-t-elle les gantelets, la ceinture et le marteau dans Tomb Raider : Underworld ?",
+    "reponse" : "De Thor",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 3,
+    "question" : "Qui a été arrêtée le 4 août 1944 dans un entrepôt du Prinsengracht à Amsterdam ?",
+    "reponse" : "Anne Frank",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 2,
+    "question" : "Quelle équation tente d'estimer le nombre potentiel de civilisations extraterrestres dans notre galaxie avec lesquelles nous pourrions entrer en contact ?",
+    "reponse" : "L'équation de Drake",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 1,
+    "question" : "Au poker, une suite formée de cinq cartes de rangs consécutifs, dont la couleur est identique et qui contient un As s'appelle une quinte flush.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 2,
+    "question" : "Si vous mordez dans un fruit de capsicum, vous croquez :",
+    "reponse" : "Un piment",
+    "type" : "QCM",
+    "options" : [
+      "Une aubergine",
+      "Un piment",
+      "Un poivron"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 2,
+    "question" : "Dans son essai 'Ecriture : Mémoires d'un métier', quelle classe de mots Stephen King propose-t-il d'éradiquer ?",
+    "reponse" : "Les adverbes",
+    "type" : "QCM",
+    "options" : [
+      "Les pronoms",
+      "Les adjectifs",
+      "Les adverbes"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 1,
+    "question" : "En 1995, Jacques Chirac avait fait de la pomme l'un des symboles de sa campagne électorale.",
     "reponse" : "Vrai",
     "type" : "VF",
     "options" : [
@@ -25,15 +576,538 @@
   },
   {
     "theme" : "Histoire",
-    "niveau" : 1,
-    "question" : "Ceci est une question ?",
+    "niveau" : 2,
+    "question" : "Quels sont les trois pays qui forment l'ALENA, la vaste zone de libre-échange créée en 1994 ?",
+    "reponse" : "Les Etats-Unis, le Mexique, le Canada",
+    "type" : "QCM",
+    "options" : [
+      "Les Etats-Unis, le Mexique, le Canada",
+      "Les Etats-Unis, le Royaume-Uni, la France",
+      "Les Etats-Unis, le Canada, la France"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 2,
+    "question" : "Quel président américain aurait fait bloquer deux pistes à l'aéroport de Los Angeles pour se faire couper les cheveux à bord d'Air Force One ?",
+    "reponse" : "Bill Clinton",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 2,
+    "question" : "Strasbourg est plus proche de Lyon que de Bruxelles.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 3,
+    "question" : "Dans quel pays scandinave a lieu chaque année le Festival musical et culturel de Roskilde ?",
+    "reponse" : "Au Danemark",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 3,
+    "question" : "Comment appelle-t-on un pratiquant de vol à voile ?",
+    "reponse" : "Un vélivole",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 2,
+    "question" : "Dans quel sport peut-on réaliser un 'acid drop' sur une rampe ?",
+    "reponse" : "En skateboard",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 3,
+    "question" : "Quel championnat du monde de cracher la commune bretonne de Sibiril, près de Roscoff, organise-t-elle régulièrement ?",
+    "reponse" : "De bigorneau",
+    "type" : "QCM",
+    "options" : [
+      "De crèpes",
+      "De varech",
+      "De bigorneau"
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 3,
+    "question" : "Dakar est la capitale située le plus à l'ouest du continent africain ?",
     "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 2,
+    "question" : "En 1999, quelle entreprise en perte de vitesse ses cofondateurs Larry Page et Sergey Brin ont-ils tenté de vendre 750 000 $ à Excite ?",
+    "reponse" : "Google",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 3,
+    "question" : "Les 'taïkonautes' sont les spationautes de la Chine.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 3,
+    "question" : "Combien de temps le discours 'I Have a Dream' de Martin Luther King a-t-il duré ?",
+    "reponse" : "16 minutes",
+    "type" : "QCM",
+    "options" : [
+      "6 minutes",
+      "11 minutes",
+      "16 minutes"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 2,
+    "question" : "Henri IV a fait bâtir l'escalier monumental du château de Blois et a lancé la construction du château de Chambord.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 3,
+    "question" : "En Chine il existe 5 fuseaux horaires différents.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 3,
+    "question" : "Quel jeu vidéo de puzzle a été conçu en juin 1984 par Alekseï Pajitnov, sur Elektronika 60 ?",
+    "reponse" : "Tetris",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 2,
+    "question" : "Le jeu vidéo Angry Birds se déroule, entre autres, à Piggy Island.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 3,
+    "question" : "Que font les cerfs mâles pour attirer les femelles pendant la période de rut ?",
+    "reponse" : "Ils brament",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 1,
+    "question" : "Quel art ancien, inscrit au patrimoine culturel immatériel de l'humanité, consiste à capturer un gibier à l'aide d'un oiseau de proie affaité ?",
+    "reponse" : "La fauconnerie",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 2,
+    "question" : "Quel instrument de musique folk né en Afrique compte quatre ou cinq cordes et est associé au bluegrass ?",
+    "reponse" : "Le banjo",
+    "type" : "QCM",
+    "options" : [
+      "La contrebasse",
+      "Le luth",
+      "Le banjo"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 1,
+    "question" : "Dans la fable de La Fontaine où 'rien ne sert de courir', qui perd la course ?",
+    "reponse" : "Le lièvre",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 2,
+    "question" : "La reine d'Angleterre est aussi le chef de l'Etat canadien.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 1,
+    "question" : "Le sonnet est un poème comptant quatorze vers, généralement organisés en deux quatrains et deux tercets.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 2,
+    "question" : "L'eau de la mer gèle à une température de 34° Fahrenheit.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 3,
+    "question" : "Combien de fleurs une abeille doit-elle butiner pour produire un kilo de miel ?",
+    "reponse" : "5 000 000",
+    "type" : "QCM",
+    "options" : [
+      "50 000",
+      "500 000",
+      "5 000 000"
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 3,
+    "question" : "Dans la vrai vie, le grand géocoucou peut tout simplement s'envoler si un vilain coyote l'attaque.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 1,
+    "question" : "En quelle voiture se transforme l'Autobot Bumblebee dans le film Transformers ?",
+    "reponse" : "Chevrolet Camaro",
+    "type" : "QCM",
+    "options" : [
+      "Ford Mustang",
+      "Chevrolet Camaro",
+      "Porsche 911"
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 3,
+    "question" : "Pour quelle forme de danse La Goulue, née Louise Weber, était-elle connue ?",
+    "reponse" : "Le cancan",
+    "type" : "QCM",
+    "options" : [
+      "Le cancan",
+      "La danse classique",
+      "Le tango"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 3,
+    "question" : "De quel classique de la science-fiction signé Stanley Kubrick l'iPod tire-t-il son nom ?",
+    "reponse" : "2001, l'odyssée de l'espace",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 2,
+    "question" : "July est un film de science-fiction écrit et réalisé par Luc Besson qui part du postulat que l'être humain n'utiliserait que 10% des capacités de son cerveau.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 3,
+    "question" : "Philip Seymour Hoffman est le neveu de Dustin Hoffman.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 2,
+    "question" : "Le poète américain Walt Whitman est l'auteur du recueil de 293 poèmes intitulé 'Feuilles d'herbe'.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 2,
+    "question" : "Quel producteur et rappeur américain a produit le single à succès 'Cry Me a River' pour Justin Timberlake, en 2002 ?",
+    "reponse" : "Timbaland",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 3,
+    "question" : "En architecture, la palissade qui entoure une fortification, ou l'espace intermédiaire délimité par les deux remparts d'un château fort s'appelle la lice.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 3,
+    "question" : "Dans la série de romans jeunesse d'Enid Blyton, combien de filles compte le Club des cinq ?",
+    "reponse" : "Deux",
+    "type" : "QCM",
+    "options" : [
+      "Deux",
+      "Trois",
+      "Cinq"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 2,
+    "question" : "Quelle est la nationalité de Bram Stoker, l'auteur de Dracula ?",
+    "reponse" : "Irlandaise",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 3,
+    "question" : "Dans quelle saison de South Park Cartman, Kenny, Stan et Kyle entrent-ils en quatrième année d'école primaire ?",
+    "reponse" : "La quatrième saison",
+    "type" : "QCM",
+    "options" : [
+      "La troisième saison",
+      "La quatrième saison",
+      "La cinquième saison"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 3,
+    "question" : "Quel jeu en réalité augmenté utilise la technologie développée par Niantic pour Ingress ?",
+    "reponse" : "Pokémon Go",
+    "type" : "QCM",
+    "options" : [
+      "Mario Kart Live : Home Circuit",
+      "Harry Potter : Wizards Unite",
+      "Pokémon Go"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 3,
+    "question" : "Stephen King a si peur du chiffre 13 qu'il n'interrompt jamais sa lecture aux pages 94, 193 ou 382, car l'addition de ces chiffres donne 13.",
+    "reponse" : "Vrai",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 3,
+    "question" : "Tom Ford, le créateur de mode américain, apparaît sous la forme d'une poupée Muscle Man Marc Doll dans South Park.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Culture generale",
+    "niveau" : 2,
+    "question" : "Le quotidien Le Monde a cessé de paraître entre février et mai 1981.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Histoire",
+    "niveau" : 3,
+    "question" : "Quel corsaire français est devenu l'un des plus puissants armateurs de Saint-Malo ?",
+    "reponse" : "Robert Surcouf",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Nature",
+    "niveau" : 2,
+    "question" : "Quel animal sauvage a été réintroduit dans le Parc naturel de Yellowstone au milieu des années 1990 ?",
+    "reponse" : "Le loup",
+    "type" : "QCM",
+    "options" : [
+      "L'ours",
+      "Le sanglier",
+      "Le loup"
+    ]
+  },
+  {
+    "theme" : "Divertissement",
+    "niveau" : 1,
+    "question" : "Dans Underworld, Sélène (Kate Beckinsale) chasse des vampires.",
+    "reponse" : "Faux",
+    "type" : "VF",
+    "options" : [
+      "Vrai",
+      "Faux"
+    ]
+  },
+  {
+    "theme" : "Litterature",
+    "niveau" : 3,
+    "question" : "Dans 'Fahrenheit 451', de Ray Bradbury, qu'est-ce que les pompiers sont censés incinérer ?",
+    "reponse" : "Des livres",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Geographie",
+    "niveau" : 2,
+    "question" : "Combien y a-t-il de pays enclavés en, Amérique du Sud ?",
+    "reponse" : "Deux",
+    "type" : "QCM",
+    "options" : [
+      "Deux",
+      "Trois",
+      "Quatre"
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 1,
+    "question" : "En plongée, que faut-il faire pour éviter les accidents de décompression ?",
+    "reponse" : "Des paliers",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sciences",
+    "niveau" : 3,
+    "question" : "Quel élément chimique peut être obtenu en faisant chauffer du cinabre ?",
+    "reponse" : "Le mercure",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Arts",
+    "niveau" : 1,
+    "question" : "Dans le film de Spielberg, qu'utilise Elliot pour attirer E.T. chez lui ?",
+    "reponse" : "Des bonbons",
+    "type" : "QCM",
+    "options" : [
+      "Des bonbons",
+      "Une fleur",
+      "Un rayon lumineux"
+    ]
+  },
+  {
+    "theme" : "Loisirs",
+    "niveau" : 2,
+    "question" : "Dans les jeux de la série 'Professeur Layton', comment s'appelle l'assistant du professeur ?",
+    "reponse" : "Luke",
+    "type" : "RC",
+    "options" : [
+      
+    ]
+  },
+  {
+    "theme" : "Sport",
+    "niveau" : 3,
+    "question" : "La largeur d'un terrain de basket est de 17 mètres.",
+    "reponse" : "Faux",
     "type" : "VF",
     "options" : [
       "Vrai",
       "Faux"
     ]
   }
-   
   ]
 }

@@ -9,9 +9,8 @@ public class Joueurs {
     public static Scanner in = new Scanner(System.in);
     private int nbJoueurs;
     private String nomJoueur;
-
-    ArrayList<Joueur> listeJoueurs;
-    ArrayList<Joueur> listeParticipants;
+    private ArrayList<Joueur> listeJoueurs;
+    private ArrayList<Joueur> listeParticipants;
     
     public Joueurs(int nbJoueurs) {
         this.nbJoueurs = nbJoueurs;
@@ -75,4 +74,22 @@ public class Joueurs {
             listeParticipants.get(i).afficherJoueur();
         }
     }
+
+    public ArrayList<Joueur> getListeJoueurs() {
+        return listeJoueurs;
+    }
+
+    public void setListeJoueurs(ArrayList<Joueur> listeJoueurs) {
+        this.listeJoueurs = listeJoueurs;
+    }
+
+    public ArrayList<Joueur> getListeParticipants() {
+        return listeParticipants;
+    }
+
+    public void setListeParticipants(ArrayList<Joueur> listeParticipants) {
+        this.listeParticipants = listeParticipants;
+    }
+
+    
 }

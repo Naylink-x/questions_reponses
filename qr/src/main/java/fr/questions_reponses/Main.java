@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.ListIterator;
+import java.util.Random;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -14,44 +16,36 @@ import com.google.gson.JsonParser;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+        Phases P = new Phases();
+        P.selectionJoueurs();
+        P.premierePhase();
         
-        //Joueurs J = new Joueurs();
-
         
-
-        // J.afficherJoueurs();
-        // J.afficherRandom();
-
-        // J.genererParticipants();
-        // J.afficherParticipants();
-
-        /* String [] a={"A","B","C"};
-        Question Q=new Question();
-        Question X = new QCM();
-        Q= Q.saisieQuestion("QCM","Histoire",3,"A ou B ou C", "A", a);
+        /* Themes T = new Themes();
+        Random random = new Random();
+        int nb = random.nextInt(10);
+        int x = 1;
+        nb = 8;
+        ListIterator<String> itThemes = T.getThemes().listIterator(nb);
         
-        X.addOptions("A","B","C");
-
-        Questions Q = new Questions("histoire", 3, "Quelle est la réponse à ce qcm ?", "A"); */
-
-        /* String choix = "rc";
-
-        if(choix.equals("qcm")){
-            Q.addOptionsQCM("a", "b", "c");
-
-        }else if(choix.equals("vf")) {
-            Q.addOptionsVF();
-        }else if(choix.equals("rc")){
-            Q.addOptionsRC("c'est ça la réponse ?");
-        }else{
-            System.out.println("Veuillez entrer un type valide");
+        if (nb != T.getThemes().size() - 1) {
+            while (itThemes.hasNext() && itThemes.nextIndex() != T.getThemes().size() - 1) {
+                itThemes.next();
+            }
+            itThemes = T.getThemes().listIterator(nb);
         }
-
-        Q.afficherQuestion(); */
-
-        Questions Q = new Questions();
+        if (itThemes.nextIndex() == nb && itThemes.previousIndex() != 0) {
+            while (itThemes.hasPrevious()) {
+                itThemes.previous();
+            }
+        } */
+        
+        /* Questions Q = new Questions();
         Q.importQuestions("Histoire");
-        Q.showQuestions();
+        Q.showQuestions(); */
+
+
         /* Q = Q.saisieQuestion();
         Q.exportQuestion(Q, Paths.get("qr/src/main/resources/qrFile2.json")); */
         

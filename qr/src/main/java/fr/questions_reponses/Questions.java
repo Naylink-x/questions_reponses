@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 
 import com.google.gson.JsonArray;
@@ -73,7 +74,7 @@ public class Questions {
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
-
+        Collections.shuffle(questionList);
         return questionList;
     }
 
@@ -85,7 +86,22 @@ public class Questions {
         questionList.remove(index);
     }
 
-    public Question selectQuestion(int index) {
-        return questionList.get(index);
+    public void selectQuestion(int index) {
+        System.out.print("Thème : " + questionList.get(index).theme + " , ");
+        System.out.print("Difficulté : " + questionList.get(index).niveau + " , ");
+        System.out.println("Type : " + questionList.get(index).type);
+        System.out.print(questionList.get(index).numero + ". ");
+        System.out.println(questionList.get(index).question);
+        for (String option : questionList.get(index).options) {
+            System.out.println(option);
+        }
+    }
+
+    public LinkedList<Question> getQuestionList() {
+        return questionList;
+    }
+
+    public void setQuestionList(LinkedList<Question> questionList) {
+        this.questionList = questionList;
     }
 }
