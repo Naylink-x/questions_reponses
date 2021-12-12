@@ -1,16 +1,6 @@
 package fr.questions_reponses;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 public class Questions {
     
@@ -21,9 +11,15 @@ public class Questions {
     // TODO : Attribuer des questions à chaque thème sous forme de liste chaînée (entre 5 et 10 par thème) + indicateur de la question sélectionnée
 
     // TODO : Constructeur 
-    public Questions() {
+    public Questions(String theme) {
+        Jsonfile json = new Jsonfile();
         questionList = new LinkedList<Question>();
+        questionList = json.importQuestions(theme);
         
+    }
+
+    public Questions() {
+
     }
 
     public void showQuestions() {
@@ -39,9 +35,9 @@ public class Questions {
         }
     }
 
-    public LinkedList<Question> importQuestions(String theme) {
+    /* public LinkedList<Question> importQuestions(String theme) {
 
-        File input = new File("qr/src/main/resources/qrFile.json");
+        File input = new File("./src/main/resources/qrFile.json");
         
         try {
             JsonElement fileElement = JsonParser.parseReader(new FileReader(input));
@@ -76,7 +72,7 @@ public class Questions {
         }
         Collections.shuffle(questionList);
         return questionList;
-    }
+    } */
 
     public void addQuestion(Question Q) {
         questionList.add(Q);

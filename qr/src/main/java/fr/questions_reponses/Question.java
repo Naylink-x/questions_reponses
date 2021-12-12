@@ -61,9 +61,10 @@ public class Question {
         System.out.println("Type : " + type);
         System.out.print(numero + ". ");
         System.out.println(question);
-        for (String option : options) {
-            System.out.println(option);
-        }
+        if (options.size() != 0)
+            for (String option : options) {
+                System.out.println(option);
+            }
     }
 
     /* public Question saisieQuestion(String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
