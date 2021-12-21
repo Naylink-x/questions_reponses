@@ -38,7 +38,7 @@ public class QCM extends Question {
                 System.out.println("Veuillez entrer un nombre");
                 isInt = false;
             }
-        } while (isInt != true);
+        } while (!isInt);
 
         System.out.println("Quel est l'intitulé de la question ? ");
         super.question = in.nextLine();

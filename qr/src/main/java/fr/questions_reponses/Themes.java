@@ -36,7 +36,7 @@ public class Themes {
         return themes.contains(theme);
     }
 
-    public void showAllTheme() {
+    public void showAllThemes() {
         for (String theme : themes) {
             System.out.println(theme);
         }

@@ -8,9 +8,6 @@ public class Questions {
 
     // TODO : Méthode représentation textuelle de tous les thèmes et de leurs questions
 
-    // TODO : Attribuer des questions à chaque thème sous forme de liste chaînée (entre 5 et 10 par thème) + indicateur de la question sélectionnée
-
-    // TODO : Constructeur 
     public Questions(String theme) {
         Jsonfile json = new Jsonfile();
         questionList = new LinkedList<Question>();
@@ -34,45 +31,6 @@ public class Questions {
             }
         }
     }
-
-    /* public LinkedList<Question> importQuestions(String theme) {
-
-        File input = new File("./src/main/resources/qrFile.json");
-        
-        try {
-            JsonElement fileElement = JsonParser.parseReader(new FileReader(input));
-            JsonObject fileObject = fileElement.getAsJsonObject();
-
-            JsonArray questions = fileObject.get("questions").getAsJsonArray();
-            for (JsonElement questionElement : questions) {
-                JsonObject questionObject = questionElement.getAsJsonObject();
-
-                String themeImport = questionObject.get("theme").getAsString();
-                if (themeImport.equals(theme)) {
-                    int niveau = questionObject.get("niveau").getAsInt();
-                    String question = questionObject.get("question").getAsString();
-                    String reponse = questionObject.get("reponse").getAsString();
-                    String type = questionObject.get("type").getAsString();
-
-                    ArrayList<String> optionsList = new ArrayList<String>();
-                    JsonArray options = questionObject.get("options").getAsJsonArray();
-                    for (JsonElement optionElement : options) {
-
-                        String opt = optionElement.getAsString();
-                        optionsList.add(opt);
-                    }
-
-                    Question Q = new Question(themeImport, niveau, question, reponse, type, optionsList);
-
-                    questionList.add(Q);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
-        Collections.shuffle(questionList);
-        return questionList;
-    } */
 
     public void addQuestion(Question Q) {
         questionList.add(Q);
