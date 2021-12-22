@@ -41,6 +41,8 @@ public class Joueur {
     }
 
     public void afficherJoueur() {
+        System.out.println();
+        System.out.println("--------------------------------");
         System.out.println("Joueur : " + this.nom);
         System.out.println("Numéro : " + this.numero);
         System.out.println("Score : " + this.score);

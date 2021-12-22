@@ -23,11 +23,14 @@ public class QCM extends Question {
         boolean isInt = true;
         
         do {
-            if (count > 0) System.out.println("Ce thème n'existe pas, renseignez un thème qui existe !");
+            if (count > 0) {
+                System.out.println("Ce thème n'existe pas, renseignez un thème qui existe parmi les suivants :");
+                super.initTheme.showAllThemes();
+            }
             System.out.println("Attribuez un thème à la question : ");
             super.theme = in.nextLine();
             count++;
-        } while (!initTheme.controlTheme(super.theme));
+        } while (!super.initTheme.controlTheme(super.theme));
         
         do {
             try {
