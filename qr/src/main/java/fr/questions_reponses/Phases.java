@@ -42,6 +42,7 @@ public class Phases implements Phase {
         String selectedTheme = "";
 
         do {
+            System.out.println();
             if (count != 0) System.out.println("Vous devez choisir un thème présent dans la liste !");
             System.out.println("Choisissez un thème parmi les suivants :");
             T.showAllThemes();
@@ -53,7 +54,7 @@ public class Phases implements Phase {
         return selectedTheme;
     }
 
-    public void elimination() {
+    public int elimination() {
         ArrayList<Integer> scoreMinimum = new ArrayList<Integer>();
         int joueurElimine = 0;
         int count = 0;
@@ -69,17 +70,27 @@ public class Phases implements Phase {
                 count++;
             }
         }
-        //System.out.println("Résultats de la premère phase :");
-        // TODO: créer classe mère 'Phases' pour pouvoir accéder aux méthodes 'Joueurs'
-        //  et transmettre la listeParticipants aux autres phases
         J.getListeParticipants().get(joueurElimine).setEtat("éliminé");
+        
+        return joueurElimine;
+    }
 
-        //J.getListeParticipants().remove(joueurElimine);
+    public void resultatPhase(int phase, int elim) {
+        System.out.println();
+        System.out.println();
+        System.out.println("-----------------------------");
+        System.out.println("- Résultats de la phase " + phase + " : -");
+        System.out.println("-----------------------------");
+        System.out.println();
+        System.out.println("Le joueur " + J.getListeParticipants().get(elim).getNom() + " a été éliminé.");
+        System.out.println();
+        J.afficherParticipants();
     }
 
     public void bonneReponse(String theme, int participant, int question, int score) {
         String reponse = "";
 
+        System.out.println();
         System.out.println("Quelle est votre réponse ?");
         reponse = in.nextLine();
         if (reponse.equals(Q.getListeQuestionList().get(theme).get(question).reponse)) {

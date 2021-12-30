@@ -22,21 +22,21 @@ public class Main {
                     break;
 
                 case 2:
-
+                    Q.showAll();
                     break;
 
                 case 3 :
                     int niveau;
-                    int count = 0;
 
                     System.out.println("Quel est le niveau des questions que vous souhaitez afficher ?");
                     niveau = in.nextInt();
 
                     for (String theme : T.getThemes()) {
                         for (Question question : Q.getListeQuestionList().get(theme)) {
-                            if (question.niveau == niveau)
+                            if (question.niveau == niveau) {
+                                System.out.println();
                                 question.afficherQuestion();
-                            count++;
+                            }
                         }
                     }
                     break;
@@ -56,10 +56,18 @@ public class Main {
 
                 case 5:
                     String theme = "";
+                    int count = 0;
                     int numeroQuestion;
 
-                    System.out.println("Pour quel thème souhaitez-vous supprimer une question ?");
-                    theme = in.nextLine();
+                    do {
+                        if (count > 0) {
+                            System.out.println("Ce thème n'existe pas, renseignez un thème qui existe parmi les suivants :");
+                            T.showAllThemes();
+                        }
+                        System.out.println("Pour quel thème souhaitez-vous supprimer une question ?");
+                        theme = in.nextLine();
+                        count++;
+                    } while (!T.controlTheme(theme));
                     System.out.println();
                     System.out.println("Voici la liste des questions de ce thème :");
                     Q.selectQuestions(theme);

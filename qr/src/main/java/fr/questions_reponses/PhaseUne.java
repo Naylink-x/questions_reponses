@@ -1,10 +1,6 @@
 package fr.questions_reponses;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class PhaseUne extends Phases implements Phase {
 
@@ -22,7 +18,9 @@ public class PhaseUne extends Phases implements Phase {
         Random random = new Random();
         nb = random.nextInt(10);
         String theme = "";
+        int elim;
 
+        System.out.println();
         System.out.println();
         System.out.println("##############################");
         System.out.println("# ----- Première phase ----- #");
@@ -36,13 +34,15 @@ public class PhaseUne extends Phases implements Phase {
             while (Q.getListeQuestionList().get(theme).get(count).niveau != 1) {
                 count++;
             }
+            System.out.println();
             Q.selectQuestion(theme, count);
             super.bonneReponse(theme, i, count, 2);
             Q.getListeQuestionList().get(theme).remove(count);
             nb++;
             T.getThemes().remove(theme);
         }
-        super.elimination();
+        elim = super.elimination();
+        super.resultatPhase(1, elim);
     }
 
     @Override

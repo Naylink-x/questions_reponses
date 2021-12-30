@@ -31,6 +31,19 @@ public class Questions {
         }
     }
 
+    public void showAll() {
+        for (String theme : listeQuestionList.keySet()) {
+            System.out.println();
+            System.out.println("-----------------");
+            System.out.println(theme);
+            System.out.println("-----------------");
+            System.out.println();
+            for (Question question : listeQuestionList.get(theme)) {
+                question.afficherQuestion();
+            }
+        }
+    }
+
     public void selectQuestions(String theme) {
         for (Question Q : listeQuestionList.get(theme)) {
             System.out.print("Thème : " + Q.theme + " , ");

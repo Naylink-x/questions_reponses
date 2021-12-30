@@ -1,9 +1,5 @@
 package fr.questions_reponses;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
-
 public class PhaseDeux extends Phases implements Phase {
 
     private PhaseUne P1;
@@ -21,7 +17,9 @@ public class PhaseDeux extends Phases implements Phase {
     @Override
     public void jouerPhase() {
         String theme = "";
+        int elim;
 
+        System.out.println();
         System.out.println();
         System.out.println("##############################");
         System.out.println("# ----- Deuxième phase ----- #");
@@ -37,6 +35,7 @@ public class PhaseDeux extends Phases implements Phase {
                     while (Q.getListeQuestionList().get(theme).get(count).niveau != 2) {
                         count++;
                     }
+                    System.out.println();
                     Q.selectQuestion(theme, count);
                     super.bonneReponse(theme, i, count, 3);
                     Q.getListeQuestionList().get(theme).remove(count);
@@ -44,7 +43,8 @@ public class PhaseDeux extends Phases implements Phase {
                 }
             }
         }
-        super.elimination();
+        elim = super.elimination();
+        super.resultatPhase(2, elim);
     }
 
     @Override

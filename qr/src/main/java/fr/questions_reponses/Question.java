@@ -67,10 +67,6 @@ public class Question {
             }
     }
 
-    /* public Question saisieQuestion(String theme, int niveau, String question, String reponse, String type, ArrayList<String> options) {
-        return new Question(theme, niveau, question, reponse, type, options);
-    } */
-
     public Question saisieQuestion() {
         Question Q = new Question();
 

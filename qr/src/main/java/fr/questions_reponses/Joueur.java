@@ -47,7 +47,6 @@ public class Joueur {
         System.out.println("Numéro : " + this.numero);
         System.out.println("Score : " + this.score);
         System.out.println("Etat : " + this.etat);
-        System.out.println();
     }
 
     public static Joueur saisieJoueur(String nom) {
